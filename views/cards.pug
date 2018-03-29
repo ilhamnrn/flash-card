@@ -1,0 +1,57 @@
+extends layout
+
+block content
+
+    content
+        h4= text
+        if hint
+            i Hint : #{hint}
+        br
+        a(href=`/cards/${id}?side=${sidenya}`) #{sideToDisplay}
+        br
+        a(href="/cards") Soal Baru
+        br
+        form(action="/goodbye", method="POST")
+                input(type="submit" value="Dadah")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+        //- ul
+        //-     each color in colors            
+        //-         li= color
+        //- table
+        //-     thead
+        //-         tr
+        //-             td depan
+        //-             td belakang
+        //-     tbody
+        //-         tr  
+        //-             td ilham
+        //-             td nurroni
+        //-         tr  
+        //-             td heinrich
+        //-             td jumali

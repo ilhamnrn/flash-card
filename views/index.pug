@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    content
+        h4 helo, #{username}
+            form(action="/goodbye", method="POST")
+                input(type="submit" value="Logout")
+            a(href="/cards") Gas Bray
